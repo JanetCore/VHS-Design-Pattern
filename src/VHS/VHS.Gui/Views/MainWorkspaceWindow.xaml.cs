@@ -11,17 +11,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using VHS.Core;
 
-namespace VHS.Gui.Views.Windows;
-
-/// <summary>
-/// Interaction logic for MainWorkspaceWindow.xaml
-/// </summary>
-public partial class MainWorkspaceWindow : WindowBase
+namespace VHS.Gui.views
 {
-    public MainWorkspaceWindow()
+    /// <summary>
+    /// Interaction logic for MainWorkspaceWindow.xaml
+    /// </summary>
+    public partial class MainWorkspaceWindow : Window
     {
-        InitializeComponent();
+        public MainWorkspaceWindow()
+        {
+            InitializeComponent();
+        }
     }
 }

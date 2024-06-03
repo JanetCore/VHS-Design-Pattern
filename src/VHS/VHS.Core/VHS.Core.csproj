@@ -42,4 +42,9 @@
     <ProjectReference Include="..\VHS.Data\VHS.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="services\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+
 </Project>

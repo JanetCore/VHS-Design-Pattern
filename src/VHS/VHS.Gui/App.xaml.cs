@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
-using VHS.Gui.Views.Windows;
+using VHS.Gui.views;
 
 namespace VHS.Gui;
 
