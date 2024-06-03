@@ -1,0 +1,16 @@
+﻿<Core:PageBase x:Class="VHS.Gui.Views.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:Core="clr-namespace:VHS.Core;assembly=VHS.Core"
+      xmlns:ctrls="clr-namespace:VHS.Gui.Views.Controls" 
+        xmlns:local="clr-namespace:VHS.Gui.Views.Pages" 
+      d:DataContext="{d:DesignInstance Type=local:MainPage, IsDesignTimeCreatable=True}"
+      mc:Ignorable="d" 
+      Title="MainPage"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch">
+
+    <ctrls:GenUserControl />
+</Core:PageBase>
