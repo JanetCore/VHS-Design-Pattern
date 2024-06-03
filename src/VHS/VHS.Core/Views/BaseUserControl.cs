@@ -8,6 +8,9 @@ namespace VHS.Core
 {
     public abstract class BaseUserControl : UserControl, INotifyPropertyChanged
     {
+        public double Height { get; set; } = 300;
+        public double Width { get; set; } = 300;
+        public object DataContext { get; set; }
         protected readonly IServiceProvider _serviceProvider;
 
         protected BaseUserControl(IServiceProvider serviceProvider)

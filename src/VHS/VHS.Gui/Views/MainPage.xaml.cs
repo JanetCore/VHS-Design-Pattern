@@ -23,6 +23,7 @@ namespace VHS.Gui.views
         public MainPage()
         {
             InitializeComponent();
+            DataContext = this;
         }
     }
 }

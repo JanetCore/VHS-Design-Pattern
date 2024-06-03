@@ -8,6 +8,9 @@ namespace VHS.Core
 {
     public abstract class BaseWindow : Window, INotifyPropertyChanged
     {
+        public double Height { get; set; } = 300;
+        public double Width { get; set; } = 300;
+        public string Title { get; set; } = "Untitlted";
         protected readonly IServiceProvider _serviceProvider;
 
         protected BaseWindow(IServiceProvider serviceProvider)

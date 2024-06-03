@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace VHS.Gui.views
+namespace VHS.Gui.Views
 {
     /// <summary>
     /// Interaction logic for GenUserControl.xaml
@@ -23,6 +23,7 @@ namespace VHS.Gui.views
         public GenUserControl()
         {
             InitializeComponent();
+            DataContext = this;
         }
     }
 }

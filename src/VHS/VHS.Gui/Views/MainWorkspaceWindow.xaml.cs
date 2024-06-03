@@ -22,6 +22,7 @@ namespace VHS.Gui.views
         public MainWorkspaceWindow()
         {
             InitializeComponent();
+            DataContext = this;
         }
     }
 }

@@ -1,12 +1,14 @@
-﻿<Window x:Class="VHS.Gui.views.MainWorkspaceWindow"
+﻿
+<Window x:Class="VHS.Gui.Views.MainWorkspaceWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:VHS.Gui.views"
-        mc:Ignorable="d"
-        Title="MainWorkspaceWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        xmlns:local="clr-namespace:VHS.Gui.Views"
+        xmlns:views="clr-namespace:VHS.Gui.Views"
+        d:DesignHeight="{Binding Height}" d:DesignWidth="{Binding Width}" 
+        d:DataContext="{d:DesignInstance local:MainWorkspaceWindow}"
+        Title="{Binding Title}">
+    
+    <views:GenUserControl VerticalAlignment="Center" VerticalContentAlignment="Center" />
 </Window>
