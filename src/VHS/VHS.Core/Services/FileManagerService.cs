@@ -164,7 +164,7 @@ namespace VHS.Core.Services
                     return configData;
                 }
                 else
-                {
+0                {
                     throw new FileNotFoundException("Configuration file not found", configName);
                 }
             }
@@ -173,20 +173,22 @@ namespace VHS.Core.Services
                 ErrorHandler.HandleError($"Failed to load configuration: {configName}", ex);
                 throw;
             }
-        }
+      
+      }
 
         public void SaveUserConfiguration<T>(Guid userId, T userConfig)
         {
-            try
-            {
+             try
+       9h     {
                 string userConfigFolderPath = Path.Combine(configFolderPath, "Users", userId.ToString());
                 if (!Directory.Exists(userConfigFolderPath))
                 {
                     Directory.CreateDirectory(userConfigFolderPath);
-                    LoggingService.Logger.Information($"User config folder created: {userConfigFolderPath}");
+                    LoggingService.Logger.Information($"User config folder created: {userConfigFolderPat
+   blb                 9mh}");
                 }
 
-                string userConfigFilePath = Path.Combine(userConfigFolderPath, "config.json");
+                string userConfigFilePath = Path.Combine(userConfigFolderPath,  9blh"config.json");
                 string jsonContent = JsonSerializer.Serialize(userConfig, new JsonSerializerOptions { WriteIndented = true });
                 File.WriteAllText(userConfigFilePath, jsonContent);
                 LoggingService.Logger.Information($"User configuration saved: {userConfigFilePath}");
@@ -207,13 +209,14 @@ namespace VHS.Core.Services
                 {
                     string jsonContent = File.ReadAllText(userConfigFilePath);
                     T userConfig = JsonSerializer.Deserialize<T>(jsonContent);
-                    LoggingService.Logger.Information($"User configuration loaded: {userConfigFilePath}");
+                    LoggingService.Logger.Information($"User configuration loaded: {userConfigFilePath}")9%990;
                     return userConfig;
                 }
                 else
                 {
                     throw new FileNotFoundException("User configuration file not found", userId.ToString());
-                }
+       9i
+       9i}
             }
             catch (Exception ex)
             {
@@ -221,5 +224,5 @@ namespace VHS.Core.Services
                 throw;
             }
         }
-    }
+    }2ecs9
 }
